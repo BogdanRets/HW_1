@@ -8,13 +8,9 @@
 header{
     position: sticky;
     padding: 12px;
-    top: 15px;
+    top: 0;
     background: #ffffff;
     z-index: 2;
-}
-.container{
-    width: 100%;
-    margin: 0 auto;
 }
 .table{
     width: 100%;
@@ -79,7 +75,7 @@ header{
 .float_left.wrtland{
     margin-top: 150px;
 }
-h1{
+.mntext{
     width: 572px;
     font-weight: 700;
     font-size: 47px;
@@ -129,34 +125,39 @@ a{
     margin-right: 46px;
 }
 .auth_mark{
+    width: 420px;
     height: 32px;
     font-size: 27px;
 }
 .auth_graph{
+    width: 300px;
     font-weight: 500;
     font-size: 21px;
     color: #575757;
     margin-bottom: 12px;
 }
 .auth_description{
-    width: 725px;
+    width: 645px;
     height: 57px;
     color: #575757;
     margin-bottom: 25.5px;
 }
-.social_mark:first-of-type{
-    padding-left: 100px;
-}
 .social_mark{
     margin-right: 19px;
+    position: relative;
 }
-.name_titl{
-    margin-top: -95px;
-    margin-right: 30px;
+.auth_rel{
+    width: 250px;
+    position: absolute;
+    padding-top: 20px;
+    left: 375px;
 }
 .ctrelka{
-    margin-left: -30px;
-    margin-top: -68px;
+    position: relative;
+    width: 250px;
+}
+.fmr{
+    padding: 80px 10px 0px 0px;
 }
 .yel_name{
     font-weight: 500;
@@ -278,6 +279,30 @@ a{
     background: #FFBE0B;
     padding-bottom: 67px;
 }
+.four_sec_cont{
+    width: 1650px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.four_sec_cont>div{
+    height: 230px;
+    width: 702px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.vision:first-of-type,
+.vision:last-of-type{
+    position: absolute;
+    top: 202px;
+    opacity: 0.7;
+}
+.vision:first-of-type{
+    left: -410px;
+}
+.vision:last-of-type{
+    right: -410px;
+}
 #optio{
     text-align: center;
 }
@@ -306,12 +331,12 @@ a{
 }
 .nam_opi{
     padding-top: 60px;
-    width: 270px;
+    width: 210px;
     font-weight: 600;
     font-size: 27px;
 }
 .level_opi{
-    width: 250px;
+    width: 254px;
     padding-bottom: 16px;
     font-weight: 500;
     font-size: 21px;
@@ -322,14 +347,14 @@ a{
     color: #575757;
     padding-bottom: 60px; 
 }
+.ps_rel{
+    position: relative;
+    overflow: hidden;
+}
 .str{
     position: absolute;
-    margin-top: -30px;
-    margin-left: -120px;
-}
-.hidd{
-    margin-top: -250px;
-    overflow: hidden;
+    top: 63px;
+    left: 200px;
 }
 .start_wi{
     padding-top: 32px;
@@ -337,7 +362,8 @@ a{
     margin: 0 auto;
 }
 .mid_foot{
-    margin-top: 100px;
+    margin-top: 75px;
+    overflow: hidden;
 }
 .rev{
     padding-top: 5px;
@@ -348,18 +374,14 @@ a{
     font-size: 36px;
     color: #2203E4;
     margin-top: 42px;
-    margin-left: -250px;
+    position: absolute;
 }
 .mid_foot_par{
-    margin-top: 101px;
-    margin-left: -300px;
-    width: 611px;
+    margin-top: 61px;
     color: #575757;
-    padding-bottom: 16px;
 }
 .float_left.foot_btn{
-    margin-top: 136px;
-    margin-left: -600px;
+    margin-top: 17px;
     padding: 10px 16px;
     background: #0062FF;
     border: none;
@@ -375,7 +397,6 @@ a{
 }
 .frm_foot{
     width: 1000px;
-    margin-top: -45px;
     margin: 0 auto;
 }
 #last_nam{
