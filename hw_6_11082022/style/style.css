@@ -103,7 +103,8 @@ li{
 .sect2{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;
     margin-bottom: 6.2rem;
 }
 :root{
@@ -120,6 +121,7 @@ li{
     flex-direction: column;
     justify-content: space-between;
     padding: 2.5rem 2rem;
+    width: 50%;
 }
 .women_text{
     font-family: 'Montserrat';
@@ -145,6 +147,7 @@ li{
     justify-content: space-between;
     align-items: flex-start;
     padding: 2.5rem 2rem;
+    width: 50%;
 }
 .men_text{
     font-family: 'Montserrat';
@@ -223,13 +226,13 @@ footer{
 }
 .foot_cont{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     width: 97%;
     margin: 0 auto;
     margin-bottom: 7.8rem;
 }
 .last{
-    margin-right: 7%;
+    width: 70%;
 }
 #style3::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -275,7 +278,7 @@ footer{
     opacity: 0.4;
 }
 .medi{
-    margin-right: 9.3rem;
+    width: 30rem;
 }
 .medi_links{
     color: #000;
