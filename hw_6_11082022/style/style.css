@@ -334,6 +334,12 @@ footer{
         font-size: 24px;
         line-height: 28px;
     }
+    .container{
+        padding: 3em 1rem 3em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .dropdown_menu:hover {
         background-color: orangered;
     } 
@@ -354,7 +360,7 @@ footer{
         min-width: 200px;
     }
     .header_btn_phone{
-        margin-left: 40%;
+        margin-left: 30%;
         font-family: 'Montserrat';
         font-size: 16px;
         line-height: 60px;
@@ -379,10 +385,21 @@ footer{
         align-items: center;
     }
     .sect1_blck_boot {
-        display: flex;
-        margin-bottom: 2.5rem;
-        width: 450px;
         overflow: hidden;
+        position: relative;
+        margin-bottom: 2rem;
+}
+    .sect1_blck_boot_imgtop:first-of-type{
+        width: 481px;
+        margin-right: 300px;
+    }
+    .sect1_blck_boot_imgtop:last-of-type{
+        width: 70%;
+        position: absolute;
+        margin-left: 200px;
+    }
+    .cont_man{
+        width: 100%;
     }
     .sect1_blck_text,
     .sect1_blck_text_para {
@@ -398,12 +415,14 @@ footer{
     .women{
         background-image: url(../img/back_women_phone.png);
         background-size: contain;
-        width: 45rem;
+        width: 30rem;
+        height: 30rem;
     }
     .men{
         background-image: url(../img/back_men_phone.png);
         background-size: contain;
-        width: 45rem;
+        width: 30rem;
+        height: 30rem;
     }
     .foot_links{
         flex-flow: row;
@@ -411,5 +430,8 @@ footer{
     .foot_cont{
         flex-direction: column;
         gap: 2.9rem;
+    }
+    .medi{
+        width: 100%;
     }
 }
