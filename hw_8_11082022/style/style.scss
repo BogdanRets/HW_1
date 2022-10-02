@@ -102,7 +102,7 @@ header{
     padding-bottom: 12.1rem;
 }
 .sect2{
-    width: 164.5rem;
+    width: 83%;
     margin: 0 auto;
     padding-top: 10.5rem;
     &_our{
@@ -111,13 +111,13 @@ header{
     &_gri{
         padding-bottom: 3.5rem;
         display: grid;
-        grid-template-columns: 50.9rem 49.7rem 50.3rem;
-        grid-template-rows: 42rem 45rem;
-        gap: 2.9rem 6.6rem;
-        margin: 0 auto;
-        & :last-of-type{
-            grid-column: 3 / 4;
-        }
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "l c r"
+            "l c r"
+            "l1 c r1";
+        -moz-column-gap: 4.27%;
+        column-gap: 4.27%;
         &_blck{
             & h2{
                 font-weight: 700;
@@ -127,7 +127,28 @@ header{
                 margin-bottom: 2.2rem;
             }
         }
+        &_blck:nth-child(1){
+            grid-area: l;
+        }
+        &_blck:nth-child(2){
+            grid-area: c;
+        }
+        &_blck:nth-child(3){
+            grid-area: r;
+        }
+        &_blck:nth-child(4){
+            grid-area: r1;
+            align-self: end;
+        }
+        &_blck:nth-child(5){
+            grid-area: l1;
+            align-self: end;
+        }
     }
+}
+.sect2_mg{
+    width: 100%;
+    height: 100%;
 }
 .mid{
     display: flex;
@@ -219,7 +240,7 @@ header{
 }
 .sect4{
     padding-top: 12rem;
-    width: 163.5rem;
+    width: 83%;
     margin: 0 auto;
     &_mid{
         display: flex;
@@ -243,15 +264,15 @@ header{
     }
     &_hard_grid{
         display: grid;
-        grid-template-columns: repeat(3, auto);
-        gap: 3rem;
+        grid-template-columns: 28.7% 25.43% 43.25%;
+        gap: 5rem;
         margin-bottom: 3.5rem;
     }
 }
 .sect4_cont:hover{
     @keyframes move {
         from {
-          left: 1350px;
+          left: 1100px;
         }
         to {
           left: 0px;}
@@ -268,9 +289,53 @@ header{
     margin-bottom: 2rem;
 }
 .gr_blck{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem;
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+        "top top"
+        "mid_l mid_r"
+        "bot bot";
+}
+.gr_blck_last{
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: 25.57% 29.42% 39.28%;
+    grid-template-areas:
+        "top top top"
+        "midl mid midr"
+        "midl midt midr";
+}
+.gr_blck_last>div{
+    &:nth-child(1) {
+        grid-area: top;
+    }
+    &:nth-child(2) {
+        grid-area: midl;
+    }
+    &:nth-child(3) {
+        grid-area: mid;
+    }
+    &:nth-child(4) {
+        grid-area: midt;
+    }
+    &:nth-child(5) {
+        grid-area: midr;
+    }
+}
+.gr_blck>div{
+    &:nth-child(1) {
+        grid-area: top;
+    }
+    &:nth-child(2) {
+        grid-area: mid_l;
+    }
+    &:nth-child(3) {
+        grid-area: mid_r;
+    }
+    &:nth-child(4) {
+        grid-area: bot;
+    }
 }
 .vidstup{
     display: flex;
@@ -285,31 +350,32 @@ header{
 }
 .sect5{
     &_gri{
+        margin-top: 5.11rem;
         display: grid;
-        grid-template-columns: 28.5rem 64.6rem 45.4rem;
-        grid-template-rows: 29rem 44rem;
-        gap: 2.9rem 12.6rem;
-        margin: 0 auto;
-        & :last-of-type{
-            grid-column: 3 / 4;
-        }
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+            "topll mid toprr"
+            "topll mid toprr";
+        -moz-column-gap: 5rem;
+        column-gap: 8rem;
+        padding-bottom: 12rem;
     }
 }
-.real{
-    position: relative;
+.sect5_gri>div{
+    &:nth-child(1) {
+        grid-area: topll;
+        gap: 4.8rem;
+        display: grid;
+    }
+    &:nth-child(2) {
+        grid-area: mid;
+    }
+    &:nth-child(3) {
+        grid-area: toprr;
+    }
 }
-.absol{
-    position: absolute;
-}
-#abs1{
-    top: -6rem;
-    left: -3rem;
-}
-#abs2{
-    top: 5rem;
-}
-#abs3{
-    top: -10rem;
+.sima{
+    width: 100%;
 }
 .foot_cont{
     background-image: url(../img/last_blck_back.png);
@@ -492,13 +558,14 @@ header{
         display: inline-block;
     }
     .sect2{
-        width: 50rem;
         &_gri {
             display: flex;
             flex-direction: column;
             width: 40rem;
             justify-content: center;
             text-align: center;
+            gap: 2rem;
+            margin: 0 auto;
         }
     }
     .sect3_row{
@@ -521,25 +588,19 @@ header{
        }
     }
     .sect4_hard_grid{
-        overflow: hidden;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 46.5rem;
         width: fit-content;
-    }
-    #grl{
-        margin-left: 2.5rem;
-    }
-    #grllast{
-        margin-left: 10rem;
     }
     .sect5_gri,
     .midel,
     .fl_rw{
         display: flex;
         flex-direction: column;
-        
-        width: 40rem;
+    }
+    .sect5_gri{
+        margin: 0 auto;
     }
     .sect2_gri_blck>img{
         width: 40rem;
@@ -576,12 +637,12 @@ header{
         text-align: center;
         flex-direction: column;
         &_nex{
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 20px;
-            width: 25.5rem;
-            align-self: center;
-            margin-bottom: 3.7rem;
+            width: 100%;
+            text-align: center;
         }
+    }
+    .last{
+        flex-direction: column;
+        gap: 2rem;
     }
 }
