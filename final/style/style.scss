@@ -359,6 +359,9 @@ h4 {
             gap: 10%;
         }
     }
+    .wdth{
+        width: 100%;
+    }
     .list {
         gap: 0%;
         text-align: center;
@@ -373,5 +376,8 @@ h4 {
     }
     ul {
         display: block;
+    }
+    .wdth{
+        text-align: center;
     }
 }
