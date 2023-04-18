@@ -29,6 +29,7 @@ const data = {
     {"baseCurrency":"UAH","currency":"TRY","valuteName":"Турецька ліра","saleRateNB":1.9244000,"purchaseRateNB":1.9244000,"flag":'-434px -632px'},
     {"baseCurrency":"UAH","currency":"UZS","valuteName":"Узбецький сум","saleRateNB":0.0032259,"purchaseRateNB":0.0032259,"flag":'-100px -680px'},]};
     
+    
     function show(arg){
     
     document.write(
